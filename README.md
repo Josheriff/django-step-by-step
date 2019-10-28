@@ -42,3 +42,21 @@ Que le dice a la app, que ya está, que coja ese código y haga su magia en el r
 Ahora:
 
 - `python manage.py migrate`
+
+## Populando la base de datos
+
+
+## Accediendo a la base de datos desde la shell
+
+- `python manage.py shell`
+
+y ahora en la shell:
+
+```
+import django
+django.setup()
+from polls.models import Question, Choice
+Question.objects.all() # devuelve [] porque no tenemos nada aún en bbdd
+```
+
+Hay que modificar las classes y añadirles el built_in __str__ (probar con rpr)
