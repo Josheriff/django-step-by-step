@@ -1,5 +1,9 @@
 # Django pasito a pasito (suave suavesito)
 
+## Ahorrate tiempo iendo directamente al siguiente enlace:
+
+(Documentación Django Español)[https://docs.djangoproject.com/es/2.2/intro/tutorial01/]
+
 - Creamos virtualenv
 - `pip install django`
 - `django-admin startproject {{mysite}}`
