@@ -60,3 +60,25 @@ Question.objects.all() # devuelve [] porque no tenemos nada aún en bbdd
 ```
 
 Hay que modificar las classes y añadirles el built_in __str__ (probar con rpr)
+
+
+## Creando un admin
+
+- `python manage.py createsuperuser`
+
+Rellenamos los datos y ya podemos ir a `http://127.0.0.1:8000/admin`
+
+Para poder administrar las clases creadas desde el panel de administración, y hay que registrarlas
+
+hay que ir a `polls/admin.py` e importarlos:
+
+```
+from django.contrib import admin
+
+# Register your models here.
+from .models import Question, Choice
+
+admin.site.register(Question)
+admin.site.register(Choice)
+
+```
