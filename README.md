@@ -38,3 +38,7 @@ Debemos escribir:
 - `python manage.py makemigrations {{polls}}`
 
 Que le dice a la app, que ya está, que coja ese código y haga su magia en el resto de Django
+
+Ahora:
+
+- `python manage.py migrate`
