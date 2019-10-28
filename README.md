@@ -24,3 +24,17 @@ vamos a ver que pasa si corremos django:
 Como no hemos hecho nada realmente, tenemos que darle forma a esos polls
 
 Para eso hay que irse a la carpeta polls e ir a `models.py`
+
+Creamos las clases heredando de `models.Model` para poder determinar que tipo de dato se va alojar en base de datos
+una librería de base datos, básicamente
+
+Una vez creadas las clases basandonos en lo que va a figurar en base de datos (aún no hemos metido lógica)
+
+Ahora nos vamos a `{{PROJECT-ROOT}}/{{MYSITE}}/{{MYSITE}}`
+y en el archivo `settings.py` en la constante `INSTALLED_APPS` añadimos `polls` 
+
+Debemos escribir:
+
+- `python manage.py makemigrations {{polls}}`
+
+Que le dice a la app, que ya está, que coja ese código y haga su magia en el resto de Django
