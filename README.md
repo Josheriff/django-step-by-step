@@ -82,3 +82,27 @@ admin.site.register(Question)
 admin.site.register(Choice)
 
 ```
+
+## publicando datos para todo el mundo
+
+- en `mysite/mysite/urls.py` tenemos el delivery mechanism y parecebasado en wsgi.py, con lo que hay que añadir
+las url en urlpatterns, en este caso se hace con un include.
+
+Por lo tanto creamos el archivo `url.py` dentro de polls, y vamos a hacer un include desde urls del proyecto principal
+
+
+
+
+
+
+
+```buildoutcfg
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('polls/', include('polls.url'))
+]
+
+```
