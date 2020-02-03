@@ -2,7 +2,7 @@
 
 ## Ahorrate tiempo iendo directamente al siguiente enlace:
 
-(Documentación Django Español)[https://docs.djangoproject.com/es/2.2/intro/tutorial01/]
+[Documentación Django Español](https://docs.djangoproject.com/es/2.2/intro/tutorial01)
 
 - Creamos virtualenv
 - `pip install django`
